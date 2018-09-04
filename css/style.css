@@ -27,12 +27,20 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #AAA;
+}
+
 h1 {
-	font-family: Lobster, "Open Sans", sans-serif;
+	font-family: Pacifico, "Open Sans", sans-serif;
 	margin: 0px 0px 10px 0px;
 	text-align: center;
 	padding: 6px;
+}
 
+h5 {
+	margin: 0;
+	padding:; 0;
 }
 
 .container {
@@ -122,9 +130,10 @@ li.active {
 	margin: 15px;
 }
 
-.units {
+.main {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr) 200px;
+	grid-template-rows: repeat(14, auto);
 	grid-gap: 20px;
 	padding: 20px;
 	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("../images/topography.svg");
@@ -135,9 +144,10 @@ li.active {
 	background: #fbfbfe;
 	box-shadow: 2px 0 20px rgba(0,0,0,0.2);
 	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	grid-column: 1/-2;
 }
 
-.unit-header {
+.unit-header, .sidebar-header {
 	margin: 0;
 	margin-bottom: 10px;
 	background: linear-gradient(120deg, #CCF, #DDF);
@@ -145,8 +155,12 @@ li.active {
 	box-shadow: 0 1px rgba(0,0,0,0.1);
 }
 
-.lesson-list-item {
+.lesson-list-item, .sidebar-section-list {
 	margin: 0px 0px 5px 30px;
+}
+
+.sidebar-section-list {
+	font-size: 12px;
 }
 
 #calendar {
@@ -162,11 +176,19 @@ li.active {
 	grid-row: 2/-1
 }
 
-@media only screen and (max-width: 1000px) {
-	.units {
+.sidebar {
+	grid-row: 1/-1;
+	grid-column: -2/-1;
+	background: #fbfbfe;
+	box-shadow: 2px 0 20px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/*@media only screen and (max-width: 1000px) {
+	.main {
 		grid-template-columns: 1fr 1fr;
 	}
-}
+}*/
 
 @media only screen and (max-width: 768px) {
 	.navbar {
@@ -178,7 +200,11 @@ li.active {
 		text-align: center;
 	}
 
-	.units {
+	.main {
 		grid-template-columns: 1fr;
+	}
+
+	.sidebar {
+		grid-row: 1/2;
 	}
 }
