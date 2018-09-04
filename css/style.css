@@ -61,11 +61,11 @@ h1 {
 }
 
 #hero-image-a2 {
-	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("/images/background-a2.jpg") no-repeat center;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/background-a2.jpg") no-repeat center;
 }
 
 #hero-image-apcsp {
-	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("/images/background-apcsp.jpg") no-repeat center;
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/background-apcsp.jpg") no-repeat center;
 }
 
 .navbar {
@@ -127,7 +127,7 @@ li.active {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
 	padding: 20px;
-	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("/images/topography.svg");
+	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("../images/topography.svg");
 	
 }
 
@@ -158,7 +158,7 @@ li.active {
 
 .calendar-div {
 	padding: 20px;
-	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("/images/topography.svg");
+	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("../images/topography.svg");
 	grid-row: 2/-1
 }
 
