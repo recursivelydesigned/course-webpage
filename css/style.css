@@ -1,0 +1,184 @@
+:root {
+	--black: #272727;
+	--blue: #CCCCFF;
+	--dark-blue: #7888F3;
+	--light-blue: #F9F8FF;
+	--steely: #E6F4F1;
+}
+
+* {
+	box-sizing: border-box;
+	color: var(--black);
+	font-family: "Open Sans", sans-serif;
+}	
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Lobster, "Open Sans", sans-serif;
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+	padding: 6px;
+
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 500px auto;
+	height: auto;
+}
+
+.header {
+	background: linear-gradient(120deg, #CCF, #DDF);
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.hero-image {
+	background-size: cover;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+#hero-image-a2 {
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("/images/background-a2.jpg") no-repeat center;
+}
+
+#hero-image-apcsp {
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("/images/background-apcsp.jpg") no-repeat center;
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.navbar-item {
+	display: inline-block;
+	padding: 5px 20px;-
+}
+
+li.active {
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hero-image-content {
+	display: grid;
+	grid-template-columns: auto;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.hero-image-content h4 {
+	border-bottom: 2px solid orange;
+	color: white;
+	margin: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.hero-image-content h3 {
+	color: white;
+	margin: 15px;
+	font-size: 50px;
+	font-weight: 100;
+	text-align: center;
+}
+
+#hero-image-button {
+	border-radius: 0;
+	font-size: 12px;
+	background: orange;
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+	border: none;
+	color: white;
+	font-family: inherit;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 12px;
+	margin: 15px;
+}
+
+.units {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+	padding: 20px;
+	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("/images/topography.svg");
+	
+}
+
+.unit {
+	background: #fbfbfe;
+	box-shadow: 2px 0 20px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.unit-header {
+	margin: 0;
+	margin-bottom: 10px;
+	background: linear-gradient(120deg, #CCF, #DDF);
+	padding: 5px 0 5px 20px;
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+}
+
+.lesson-list-item {
+	margin: 0px 0px 5px 30px;
+}
+
+#calendar {
+	text-align: center;
+	display: block;
+	margin: auto;
+	border: 5px red solid;
+}
+
+.calendar-div {
+	padding: 20px;
+	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("/images/topography.svg");
+	grid-row: 2/-1
+}
+
+@media only screen and (max-width: 1000px) {
+	.units {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		grid-template-columns: 1fr;
+	}
+
+	.navbar-item {
+		width: 100%;
+		text-align: center;
+	}
+
+	.units {
+		grid-template-columns: 1fr;
+	}
+}
