@@ -170,8 +170,9 @@ li.active {
 	border: 5px red solid;
 }
 
-.calendar-div {
+.calendar-div, .about-div {
 	padding: 20px;
+	min-height: 100vh;
 	background: linear-gradient(rgb(230, 244, 241,0.5),rgb(230, 244, 241,0.5) ), url("../images/topography.svg");
 	grid-row: 2/-1
 }
